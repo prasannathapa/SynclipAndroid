@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "874241907127",
+    "project_id": "synclip-38e24",
+    "storage_bucket": "synclip-38e24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874241907127:android:a09d95c518e96daba4b032",
+        "android_client_info": {
+          "package_name": "prasanna.snowfox.synclip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874241907127-grpsgg7qblsnmim1ffepchq443e7m3bq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYlNGSTBmbb917rPkD0C5fbjCtci3POtE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874241907127-grpsgg7qblsnmim1ffepchq443e7m3bq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

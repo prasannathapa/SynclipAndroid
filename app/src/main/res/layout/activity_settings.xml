@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Settings">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="Settings"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/gray"
+            app:navigationIcon="@drawable/settings_outlined"
+            android:elevation="16dp"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:textColor="@color/cyan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device Name"
+        android:layout_margin="16dp"/>
+    <EditText
+        android:imeOptions="actionNext"
+        android:id="@+id/namesss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Xiaomi POCO F1"/>
+    <TextView
+        android:textColor="@color/cyan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Scan for port"/>
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:inputType="number"
+            android:maxLength="4"
+            android:imeOptions="actionDone"
+            android:id="@+id/portsss"
+            android:layout_weight="0.7"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="8080"/>
+        <com.google.android.material.button.MaterialButton
+            android:onClick="reset"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/cyan"
+            app:cornerRadius="16dp"
+            android:layout_weight="0.3"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REset"/>
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/savesss"
+        android:backgroundTint="@android:color/holo_red_light"
+        app:cornerRadius="16dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Save"/>
+</LinearLayout>

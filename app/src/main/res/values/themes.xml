@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Synclip" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">#393e46</item>
+        <item name="colorPrimaryVariant">#222831</item>
+        <item name="colorAccent">#00adb5</item>
+        <item name="colorOnPrimary">#eeeeee</item>
+        <item name="android:windowBackground">#454B55</item>
+        <!--item name="android:windowTranslucentStatus">true</item-->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+    <style name="Button.cyan" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/cyan</item>
+        <item name="android:iconTint">@color/cyan</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>

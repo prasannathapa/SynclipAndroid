@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="#6B8BFF">
+    <RelativeLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto Connect"
+            android:textStyle="bold"
+            android:textSize="22sp"/>
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_alignParentEnd="true"
+            android:id="@+id/autotoggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/urlbox"
+            android:layout_below="@id/autotoggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="url: "
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:layout_toStartOf="@id/url"/>
+            <EditText
+                android:hint="ws://192.168.0.6:8080/"
+                android:id="@+id/url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_below="@id/autotoggle"/>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            app:cornerRadius="16dp"
+            android:backgroundTint="@color/white"
+            android:id="@+id/savebtn"
+            android:textColor="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/urlbox"
+            android:text="Save"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

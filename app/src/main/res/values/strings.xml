@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Synclip</string>
+    <string name="settings">settings</string>
+    <string name="conf">CONFIG</string>
+    <string name="SCAN">SCAN</string>
+    <string name="SCAN_RESULT">SCAN_RESULT</string>
+    <string name="AUTO_START">autoStart</string>
+    <string name="PING">PING</string>
+</resources>
